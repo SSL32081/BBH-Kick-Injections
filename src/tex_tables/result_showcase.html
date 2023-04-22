@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Spin Injections</title>
+        <link rel="stylesheet" href=".css/main.css">
+        <!--for jquery and dropdown-->
+        <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   
+        crossorigin="anonymous"></script>
+        <script src=".js/main.js"></script>
+        <!--This is my first time doing any MathJax thing, please prompt me with any improvements you can find :)-->
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script>
+    </head>
+    <body onload="initialise()">
+        <header id="header">
+            <h1 id="maintitle">Super cool spin injections result showcase room :)</h1> 
+        </header>
+        <div id="ShowcaseRoom">
+        <p><em class="centre">I still can't believe that I can pull this off.</em></p>
+            <p>
+            <b>Some words on statictics:</b><br>
+                Tables below are citing the 90% C.I. of those parameters. 
+                In the contour plots, each line correspond to an isocontour at 90% percentile. 
+            </p>
+            <p>
+                Apparently, accessing files from the clusters is not particularly efficient, especially for those large kick plots. <br>
+                Hence, it may take a couple minutes to load up all the content.
+            </p>
+            <p>
+                Also, since most content here are loaded, not hard-coded, this webpage will take up huge amount of memory <br>
+                It is strongly not recommended to reload this page too hastily, and close this page as soon as you are done with it. <br>
+                (Unless you have a really powerful machine with unlimited memory) <br>
+                I am considering to also setup a page without the kick plots, that way it will be much smoother.
+            </p>
+        </div>
+        <div>
+            While you are waiting, how about we have a 
+            <h4>Brief tour on how did we arrive to here.</h4>
+            <ol>
+                <li>Pre-compute the statistics and contour plots of all results</li>
+                <li>Group them into a big json file</li>
+                <li>Use a plotting script to read and plot them -> the big contour plots</li>
+                <li>From the same json file, extract the statistics part and format them as LaTeX tables, and save them into txt files.</li>
+                <li>Use MathJax to compile those LaTeX tables in HTML.</li>
+                <li>Plot those kicks with Plotly, export them as HTML div blocks.</li>
+                <li>Import them into this same HTML with js.</li>
+            </ol>
+        </div>
+    </body>
+
+</html>
