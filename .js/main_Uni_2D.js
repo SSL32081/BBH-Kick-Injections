@@ -6,7 +6,7 @@ console.log("Welcome aboard")
 // it took the author almost a full day to curate this as an HTML newbie :)
 // Ofc, he would very much love to hear any smarter ways to achieve the same goals.
 
-const input_base = "https://ldas-jobs.ligo.caltech.edu/~samson.leong/MyVenv/kick_Inj/.src/";
+const input_base = ".src/";
 const Qs = [1.5, 3.0];
 
 function construct_label(spin, q) {
