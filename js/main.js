@@ -85,7 +85,8 @@ function initialise() {
             // + "<p>Table showing the median and 90% C.I. of each parameters.</p>";
             
             const kickplot = document.createElement('div');
-            kickplot.innerHTML = 'Now it is gone :(';
+            // kickplot.innerHTML = 'Now it is gone :(';
+            kickplot.innerHTML = '';
             // const kickplot = document.createElement('iframe');
             // kickplot.className = 'kickplot';
             // kickplot.id = 'igraph';
